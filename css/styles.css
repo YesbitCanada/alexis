@@ -273,6 +273,9 @@ li {
 .extra-small-text {
   font-size: 13px;
 }
+.large-text {
+  font-size: 18px;
+}
 strong,
 .strong {
   font-weight: 500;
@@ -657,7 +660,8 @@ section {
   margin-top: 9px;
 }
 .sticky-navigation .navbar-brand img {
-  max-height: 26px;
+	max-height: 70px;
+	margin-top: -23px;
 }
 .sticky-navigation .current a {
   color: #fc5f45 !important;
@@ -1515,8 +1519,11 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   margin-top: 125px;
 }
 .footer .footer-col {
-  padding: 50px 40px 45px 40px;
-  text-align: left;
+	padding-top: 50px;
+	padding-right: 65px;
+	padding-left: 65px;
+	padding-bottom: 45px;
+	text-align: left;
 }
 .footer .footer-col h6 {
   margin-bottom: 28px;
@@ -1533,12 +1540,12 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   color: #fc5f45;
 }
 .footer .footer-logo {
-  margin-top: 45px;
+  margin-top: 30px;
   text-align: center;
 }
 .footer .footer-logo img {
-  max-height: 38px;
-}
+  max-height: 80px;
+  margin-top: 10%}
 
 .fixed-bg {
   background-attachment: fixed;

@@ -1,0 +1,15 @@
+主题模版使用到的相关插件：
+
+ 
+
+    Responsive Design
+    Bootstrap Compatible (3.3.6)
+    500+ Icons
+    Project details page for Portfolio
+    MailChimp Subscribe form
+    Pricing Table
+    Beautiful Work Steps
+    Working PHP Contact form
+    Clearly Commented HTML / CSS Code
+    Detailed Documentation
+    Awesome support via Email
