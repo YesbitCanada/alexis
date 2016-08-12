@@ -54,7 +54,7 @@ $('.play-button').click(function () {
 ================================= */
 $(document).ready(function () {
 	$('.smooth-scroll a, a.smooth-scroll').on('click', function (e) {
-		e.preventDefault();
+		//e.preventDefault();
 
 		var target = this.hash;
 		var $target = $(target);
@@ -97,7 +97,7 @@ function mailchimpCallback(resp) {
 /* ================================
 ===  PROJECT LOADING           ====
 ================================= */
-
+/*
 jQuery(document).ready(function ($) {
 	$('.more').on('click', function (event) {
 		event.preventDefault();
@@ -105,7 +105,7 @@ jQuery(document).ready(function ($) {
 		var href = $(this).attr('href') + ' .single-project',
 			portfolioList = $('#portfolio-list'),
 			content = $('#loaded-content');
-
+prompt(href, href);
 		portfolioList.animate({
 			'marginLeft': '-120%'
 		}, {
@@ -146,7 +146,7 @@ jQuery(document).ready(function ($) {
 		}, 800);
 	});
 });
-
+*/
 /* ================================
 ===  TESTIMONIALS              ====
 ================================= */
