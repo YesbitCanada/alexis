@@ -1478,7 +1478,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   padding-bottom: 150px;
 }
 .success {
-  display: none;
+ /* display: none;*/
 }
 .contact-form {
   text-align: center;
@@ -1522,8 +1522,8 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 }
 .footer .footer-col {
 	padding-top: 50px;
-	padding-right: 65px;
-	padding-left: 65px;
+	padding-right: 30px;
+	padding-left: 30px;
 	padding-bottom: 45px;
 	text-align: left;
 }
