@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "templateocean-font";
-  src: url("fonts/templateocean-font.woff") format("woff"),
+  src:
     url("fonts/templateocean-font.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;

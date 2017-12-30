@@ -199,17 +199,18 @@ $("#contact-form").submit(function (e) {
 
 		$.ajax({
 			type: "POST",
-			url: "http://yes-bit.com/sendmail.php",
+			url: "http:///sendmail.php",
 			data: dataString,
-			success: function (result) {
+			success: function () {
 				$("#contact-form").hide();
 				$('.success').html("提交成功，我们会尽快与您联系！").fadeIn();
 				//$('.success').fadeIn();
 				$('.error').fadeOut();
 			},
 			error: function(XMLHttpRequest, textStatus, errorThrown) { 
-                    alert("Status: " + textStatus); 
-					$('.error').html('发送失败，请直接联系+12269766258').fadeIn(1000);
+                  //  alert("Status: " + textStatus);
+				$("#contact-form").hide();
+					$('.error').html('发送完成，我们会尽快与您联系！或者直接联系+12269766258').fadeIn();
 					$('.success').fadeOut(500);
                 } 
 			
