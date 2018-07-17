@@ -154,16 +154,16 @@
     border: none;
   }
   .navbar-toggle {
-    font-size: 40px;
-    padding: 6px 12px;
-    margin-top: 18px;
+    font-size: 35px;
+    /* padding: 6px 12px; */
+    margin-top: 0;
     margin-right: 0;
     cursor: pointer;
   }
   .navbar-inverse .navbar-toggle:focus,
   .navbar-inverse .navbar-toggle:hover {
-    background-color: #fc5f45;
-    color: #ffffff;
+    background-color: transparent;
+    color: #000000;
     cursor: pointer;
   }
   .navbar-inverse .navbar-collapse,
@@ -176,4 +176,82 @@
   .sticky-navigation .main-navigation li a {
     line-height: 27px;
   }
+}
+
+.btn-menu {
+  /* display: none; */
+  position: relative;
+  background: transparent;
+  cursor: pointer;
+  margin: 20px;
+  width: 26px;
+  height: 16px;
+  float: right;
+    margin-right: 15px;
+    -webkit-transition: all ease .238s;
+       -moz-transition: all ease .238s;
+            transition: all ease .238s;
+}
+
+.btn-menu:before,
+.btn-menu:after, 
+.btn-menu span {
+  background-color: #000;;
+    -webkit-transition: all ease .238s;
+       -moz-transition: all ease .238s;
+            transition: all ease .238s;
+}
+
+.header.downscrolled .btn-menu:before,
+.header.downscrolled .btn-menu:after,
+.header.downscrolled .btn-menu span {
+  background-color: #fd942a;
+}
+
+.btn-menu:before,
+.btn-menu:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+.btn-menu span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 50%;
+  overflow: hidden;
+  text-indent: 200%;
+}
+
+.btn-menu:before {
+  -webkit-transform: translate3d(0, -7px, 0);
+          transform: translate3d(0, -7px, 0);
+}
+
+.btn-menu:after {
+  -webkit-transform: translate3d(0, 7px, 0);
+            transform: translate3d(0, 7px, 0);
+}
+
+.btn-menu.active span {
+  opacity: 0;
+}
+
+.btn-menu.active:before {
+  -webkit-transform: rotate3d(0, 0, 1, 45deg);
+            transform: rotate3d(0, 0, 1, 45deg);
+}
+
+.btn-menu.active:after {
+  -webkit-transform: rotate3d(0, 0, 1, -45deg);
+            transform: rotate3d(0, 0, 1, -45deg);
 }

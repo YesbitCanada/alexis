@@ -10,7 +10,7 @@ jQuery(window).load(function () {
         // will first fade out the loading animation
 	jQuery(".status").fadeOut();
         // will fade out the whole DIV that covers the website.
-	jQuery(".preloader").delay(1000).fadeOut("slow");
+	jQuery(".preloader").delay(800).fadeOut("slow");
 });
 
 /* =================================
@@ -22,32 +22,6 @@ var wow = new WOW(
   }
 );
 wow.init();
-
-/* ================================
-===  VIDEO PLAY BUTTON         ====
-================================= */
-$('.play-button').click(function () {
-
-	var url = $('#video-expand .embed-responsive-item').attr('src');
-	url = url.replace('autoplay=0', 'autoplay=1');
-	$('#video-expand .embed-responsive-item').attr('src', url);
-
-	var collapsed = $(this).find('span').hasClass('icon-music-play-button');
-
-	$('.play-button').find('span').removeClass('icon-arrows-circle-remove');
-
-	$('.play-button').find('span').addClass('icon-music-play-button');
-
-	if (collapsed) {
-		$(this).find('span').toggleClass('icon-music-play-button icon-arrows-circle-remove');
-	}
-	if (!collapsed) {
-		var urlstop = $('#video-expand .embed-responsive-item').attr('src');
-		urlstop = urlstop.replace('autoplay=1', 'autoplay=0');
-		$('#video-expand .embed-responsive-item').attr('src', urlstop);
-	}
-	
-});
 
 /* ================================
 ===  IN PAGE SCROLL OPTIONS    ====
@@ -76,78 +50,6 @@ $('#internal-scroll').onePageNav({
 });
 
 /* ================================
-===  MAILCHIMP SUBSCRIBE FORM  ====
-================================= */
-
-$('.mailchimp').ajaxChimp({
-	callback: mailchimpCallback,
-	url: "http://webdesign7.us6.list-manage.com/subscribe/post?u=9445a2e155b82208d73433060&amp;id=16dc80e353" //Replace this with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".
-});
-
-function mailchimpCallback(resp) {
-	if (resp.result === 'success') {
-		$('.mailchimp-success').html(resp.msg).fadeIn(1000);
-		$('.mailchimp-error').fadeOut(500);
-
-	} else if (resp.result === 'error') {
-		$('.mailchimp-error').html(resp.msg).fadeIn(1000);
-	}
-}
-
-/* ================================
-===  PROJECT LOADING           ====
-================================= */
-/*
-jQuery(document).ready(function ($) {
-	$('.more').on('click', function (event) {
-		event.preventDefault();
-
-		var href = $(this).attr('href') + ' .single-project',
-			portfolioList = $('#portfolio-list'),
-			content = $('#loaded-content');
-prompt(href, href);
-		portfolioList.animate({
-			'marginLeft': '-120%'
-		}, {
-			duration: 400,
-			queue: false
-		});
-		portfolioList.fadeOut(400);
-		setTimeout(function () {
-			$('#loader').show();
-		}, 400);
-		setTimeout(function () {
-			content.load(href, function () {
-				$('#loaded-content meta').remove();
-				$('#loader').hide();
-				content.fadeIn(600);
-				$('#back-button').fadeIn(600);
-			});
-		}, 800);
-
-	});
-
-	$('#back-button').on('click', function (event) {
-		event.preventDefault();
-
-		var portfolioList = $('#portfolio-list')
-		content = $('#loaded-content');
-
-		content.fadeOut(400);
-		$('#back-button').fadeOut(400);
-		setTimeout(function () {
-			portfolioList.animate({
-				'marginLeft': '0'
-			}, {
-				duration: 400,
-				queue: false
-			});
-			portfolioList.fadeIn(600);
-		}, 800);
-	});
-});
-*/
-/* ================================
 ===  TESTIMONIALS              ====
 ================================= */
 
@@ -171,6 +73,10 @@ $(document).ready(function () {
 
 	});
 
+	$('.btn-menu').on('click', function() {         
+        $('.mainnav-mobi').slideToggle(300);
+        $(this).toggleClass('active');
+    });
 
 });
 

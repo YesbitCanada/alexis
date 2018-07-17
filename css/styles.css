@@ -1,8 +1,4 @@
-/*
-Alexis - Responsive Portoflio Template
-Version: 1.0
-Author: Mizanur Rahman
-*/
+@charset "UTF-8";
 
 /* --------------------------------------
 =========================================
@@ -619,7 +615,7 @@ section {
    2.1 SECTION: HOME PAGE
 -----------------------------------------*/
 .home {
-  background: url(../images/backgrounds/1.jpg) no-repeat top;
+  background: url(../images/backgrounds/bg.jpg) no-repeat top;
   background-size: cover;
 }
 .home .color-overlay {
@@ -663,7 +659,9 @@ section {
 }
 .sticky-navigation .navbar-brand img {
 	max-height: 70px;
-	margin-top: -23px;
+	bottom: 17px;
+  position: relative;
+  float: left;
 }
 .sticky-navigation .current a {
   color: #fc5f45 !important;
@@ -1220,7 +1218,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 }
 .price-circle-yellow .extra-small-text {
   line-height: 0.6;
-}
+} 
 .packages .single-package {
   margin-top: 51px;
   padding-bottom: 12px;
