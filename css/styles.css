@@ -259,6 +259,10 @@ li {
 .purple-text {
   color: #b27cf5;
 }
+.blue-text {
+  color: #6495ED;
+}
+
 .yellow-text {
   color: #feb960;
 }
@@ -288,6 +292,9 @@ strong,
 .green-line-bottom {
   border-bottom: 3px solid #38c695;
 }
+.blue-line-bottom {
+  border-bottom: 3px solid #6495ED;
+}
 .purple-line-bottom {
   border-bottom: 3px solid #b27cf5;
 }
@@ -297,8 +304,8 @@ strong,
 .red-line-top {
   border-top: 3px solid #fc5f45;
 }
-.green-line-top {
-  border-top: 3px solid #38c695;
+.blue-line-top {
+  border-top: 3px solid #6495ED;
 }
 .purple-line-top {
   border-top: 3px solid #b27cf5;
@@ -528,22 +535,22 @@ section {
   color: #ffffff;
   outline: none;
 }
-.green-outline {
-  color: #38c695;
+.blue-outline {
+  color: #6495ED;
   background: #fff;
-  border: 2px solid #38c695;
+  border: 2px solid #6495ED;
   line-height: 46px;
   padding: 0 38px 0 38px;
 }
-.green-outline:hover,
-.green-outline:active,
-.green-outline:active:hover,
-.green-outline:focus:hover,
-.green-outline:focus {
-  background-color: #38c695;
+.blue-outline:hover,
+.blue-outline:active,
+.blue-outline:active:hover,
+.blue-outline:focus:hover,
+.blue-outline:focus {
+  background-color: #6495ED;
   color: #ffffff;
   outline: none;
-  border: 2px solid #38c695;
+  border: 2px solid #6495ED;
 }
 .purple-button {
   color: #ffffff;
@@ -1171,20 +1178,20 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 .price-circle-red .extra-small-text {
   line-height: 0.6;
 }
-.price-circle-green {
-  background: #38c695;
+.price-circle-blue {
+  background: #6495ED;
   width: 106px;
   height: 106px;
   margin: auto;
   border-radius: 50%;
   border: 3px solid #fff;
-  box-shadow: 0px 0px 0px 3px #38c695;
+  box-shadow: 0px 0px 0px 3px #6495ED;
 }
-.price-circle-green h4 {
+.price-circle-blue h4 {
   margin-bottom: 0;
   margin-top: 23px;
 }
-.price-circle-green .extra-small-text {
+.price-circle-blue .extra-small-text {
   line-height: 0.6;
 }
 .price-circle-purple {
@@ -1470,7 +1477,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
    2.14 SECTION: FOOTER
 -----------------------------------------*/
 .get-in-touch {
-  background: url(../images/backgrounds/6.jpg) no-repeat top;
+  /* background: url(../images/backgrounds/6.jpg) no-repeat top; */
   background-size: cover;
   padding-top: 114px;
   padding-bottom: 150px;
