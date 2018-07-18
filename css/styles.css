@@ -829,8 +829,8 @@ section {
   left: 15%;
 }
 .grid figure:hover img {
-  -webkit-opacity: 0.7;
-  opacity: 0.7;
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
   -webkit-transition: all ease 0.25s;
   transition: all ease 0.25s;
   -webkit-backface-visibility: hidden;
@@ -908,7 +908,7 @@ figure.effect-zoe p.description {
   bottom: 10em;
   width: 100%;
   text-align: center;
-  color: #fff;
+  color: #000;
   text-transform: none;
   font-size: 90%;
   opacity: 0;
