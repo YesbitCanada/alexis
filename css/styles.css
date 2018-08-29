@@ -28,6 +28,14 @@ body {
   overflow-x: hidden !important;
 }
 
+.row {
+  margin-left: 0px !important;
+}
+
+container {
+  width: 85%;
+}
+
 /* PRE LOADER */
 .preloader {
     position: fixed;
@@ -552,6 +560,19 @@ section {
   outline: none;
   border: 2px solid #6495ED;
 }
+.blue-button {
+    color: #ffffff;
+    background: #6495ED;
+}
+.blue-button:hover,
+.blue-button:active,
+.blue-button:active:hover,
+.blue-button:focus:hover,
+.blue-button:focus {
+    background-color: #0e15ed;
+    color: #ffffff;
+    outline: none;
+}
 .purple-button {
   color: #ffffff;
   background: #b27cf5;
@@ -612,6 +633,9 @@ section {
   outline: none;
   border: 2px solid #feb960;
 }
+
+
+
 
 /* --------------------------------------
 =========================================
@@ -836,6 +860,28 @@ section {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
+/*.buffer {*/
+  /*display: block;*/
+  /*transition: display .5s ease-in-out;*/
+/*}*/
+
+/*.demo {*/
+  /*display: none !important;*/
+  /*transition: display .5s ease-in-out;*/
+/*}*/
+/*.buffer: hover{*/
+  /*display: none;*/
+  /*transition: display .5s ease-in-out;*/
+/*}*/
+
+/*.demo:hover{*/
+  /*display: block;*/
+  /*transition: display .5s ease-in-out;*/
+/*}*/
+
+
+
 .grid figure figcaption {
   padding-right: 5px;
   padding-left: 5px;
@@ -968,6 +1014,8 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
+
+
 
 /* SINGLE PROJECT */
 #loader {
