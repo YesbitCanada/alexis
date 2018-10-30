@@ -708,6 +708,13 @@ section {
   color: #fc5f45;
 }
 
+.lang {
+  font-size: 10px;
+  position: relative;
+  font-size: 15px;
+  top: 11px;
+}
+
 /*---------------------------------------
    2.2 SECTION: ABOUT US
 -----------------------------------------*/
